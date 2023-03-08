@@ -10,7 +10,7 @@ Feature:ilk feature file
   And close the application
 @tesla
   Scenario: TC02_google_tesla_arama
-  
+
   When kullanici tesla için arama yapar
   Then sonuclarda tesla oldugunu dogrular
   Then close the application
