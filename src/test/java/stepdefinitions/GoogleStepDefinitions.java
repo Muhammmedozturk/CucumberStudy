@@ -1,5 +1,6 @@
 package stepdefinitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -45,4 +46,14 @@ googlePage.searchBox.sendKeys("iphone", Keys.ENTER);
    Assert.assertTrue(Driver.getDriver().getPageSource().contains(string));
     }
 
+    @Then("kullanıcı {string} için arama yapar")
+    public void kullanıcıIçinAramaYapar(String string) {
+googlePage.amazonSeaarch.sendKeys(string);
+    }
+
+    @And("sayfa baslıgının {string} içerdiğini test eder")
+    public void sayfaBaslıgınınIçerdiğiniTestEder(String string) {
+        Assert.assertTrue(Driver.getDriver().getPageSource().contains(string));
+
+    }
 }

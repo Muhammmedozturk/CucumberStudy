@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         monochrome = true,
         features ="./src/test/resources/features",
         glue ="stepdefinitions",
-        tags = "@personel",
+        tags = "@amazon",
         dryRun = false
 )
 public class Runner {

@@ -11,4 +11,7 @@ public class GooglePage {
     }
     @FindBy(name = "q")
     public WebElement searchBox;
+
+    @FindBy (id = "twotabsearchtextbox")
+    public WebElement amazonSeaarch;
 }
