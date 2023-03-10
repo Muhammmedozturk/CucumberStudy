@@ -13,8 +13,8 @@ import org.junit.runner.RunWith;
         },
         monochrome = true,
         features ="./src/test/resources/features",
-        glue ="stepdefinitions",
-        tags = "@amazon",
+        glue = {"stepdefinitions", "hooks"},
+        tags = "@excel",
         dryRun = false
 )
 public class Runner {
